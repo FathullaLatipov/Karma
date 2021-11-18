@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 21:29+0500\n"
+"POT-Creation-Date: 2021-11-18 22:12+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,12 +164,12 @@ msgstr "изображения продукта"
 msgid "product images"
 msgstr "изображения продуктов"
 
-#: .\sotti\settings.py:121
-msgid "English"
-msgstr ""
-
 #: .\sotti\settings.py:122
 msgid "Russian"
+msgstr ""
+
+#: .\sotti\settings.py:123
+msgid "English"
 msgstr ""
 
 #: .\templates\account\account_inactive.html:5

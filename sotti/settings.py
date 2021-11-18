@@ -5,7 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 SECRET_KEY = 'django-insecure-!nt3+7vrkj8cqjr+@s*a!w=2#nf!hze$dxsl0ae7c4ly2!5f)b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -95,7 +94,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -114,15 +112,17 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+
+gettext = lambda s: s
 LANGUAGES = (
-    ('en', _('English')),
-    ('ru', _('Russian'))
+    ('en', gettext('Russian')),
+    ('ru', gettext('English')),
 )
+
 LOCALE_PATHS = BASE_DIR / 'locale',
 
 TIME_ZONE = 'Asia/Tashkent'
@@ -143,7 +143,6 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 CKEDITOR_CONFIGS = {
@@ -154,13 +153,11 @@ CKEDITOR_CONFIGS = {
 
 SITE_ID = 1
 
-
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 10
 ACCOUNT_USERNAME_MIN_LENGTH = 3
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
