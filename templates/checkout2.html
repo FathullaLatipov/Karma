@@ -1,4 +1,4 @@
-{% extends 'layouts/base.html' %}
+    {% extends 'layouts/base.html' %}
 {% load static %}
 {% load mytags %}
 {% load i18n %}
@@ -89,7 +89,7 @@
                             </div>
 
                             <div class="col-4 form-group">
-                                <img src="https://aab.uz/upload/iblock/6ad/6ada5d642c2133a745259269ddb97e03.png"  class="card_humans" alt="">
+                                <img src="https://nbu.uz/upload/iblock/f0a/NBU_card_original_13vQ_2.png"  class="card_humans" alt="">
                             </div>
                             <div class="col-4">
                                   <img src="http://www.banklar.uz/images/card/uzcard.png" class="card_humans" alt="">
@@ -97,6 +97,7 @@
                             <div class="col-4">
                                   <img src="https://bank.uz/upload/resize_cache/iblock/113/265_151_1/11302e0240db72e08540986248fc13e1.png" class="card_humans" alt="">
                             </div>
+                            <br>
                             <button type="submit" class="btn btn-primary m-auto w-50">{% trans 'Purchase' %}</button>
                         </form>
                     </div>
@@ -113,7 +114,7 @@
                             <ul class="list list_2">
 <!--                                <li><a href="#">Subtotal <span>$2160.00</span></a></li>-->
 <!--                                <li><a href="#">Shipping <span>Flat rate: $50.00</span></a></li>-->
-                                <li><a href="#">{% trans 'Total' %} <span>{% get_cart_sum request %}.000som</span></a></li>
+                                <li><a href="#">{% trans 'Total' %} <span>{% get_cart_sum request %}som</span></a></li>
                             </ul>
                             
                         </div>

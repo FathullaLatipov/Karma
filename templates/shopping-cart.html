@@ -71,7 +71,7 @@
                     <div class="cart__total">
                         <h6>{% trans 'Cart total' %}</h6>
                         <ul>
-                            <li>{% trans 'Total' %} <span>{% get_cart_sum request %}.000som</span></li>
+                            <li>{% trans 'Total' %} <span>{% get_cart_sum request %}som</span></li>
                         </ul>
                         <a href="{% url 'orders:create' %}" class="primary-btn">{% trans 'Proceed to checkout' %}</a>
                     </div>
