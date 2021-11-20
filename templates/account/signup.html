@@ -33,35 +33,16 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-    <h3 class="text-center p-3" style="font-weight:600;margin-top:20px">{% trans 'Register Page' %}</h3>
+
     <div class="container col-md-6">
-    <ul class="socialaccount_providers" style="background-color:#fff;padding:1px;box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);margin:auto;border-radius:20px 20px 0px 0px">
+ <ul class="socialaccount_providers mt-5" style="background-color:#fff;">
         {% get_providers as socialaccount_providers %}
-
-        {% for provider in socialaccount_providers %}
-
-
-        <li class="social_menu">
-            <a title="{{provider.name}}"
-               class="btn btn-block btn-social btn-md socialaccount_provider btn-{{provider.id}}"
-               href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}"
-               style="color:#000;">
-
-                <img alt="{{provider.name}}" src="{% static 'img/features/' %}{{provider.name}}logo.png" width="40"
-                     height="40"><br>{% trans 'Register with' %} {{provider.name}}
-            </a>
-
-            <!--    <a style="" title="{{provider.name}}" class="socialaccount_provider2 {{provider.id}}"-->
-            <!--     href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name|cut:'Facebook'|cut:'Instagram'}}</a>-->
-            <!--    <img alt="{{provider.name}}" src="{% static 'img/favourites/' }%{{provider.name}}facebook.png" width="40" height="40" >-->
-        </li>
-        {% endfor %}
-
+<h3 class="text-center p-3" style="font-weight:600;margin-top:20px">{% trans 'Register Page' %}</h3>
     </ul>
 
     <div class="well login-well" style="box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);width: 320px;margin:auto;border-radius:0px 0px 30px 30px">
         <div class="socialaccount_ballot" >
-            <ul class="socialaccount_providers" >
+            <ul class="socialaccount_providers1" >
                 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                     {% csrf_token %} {% if form.non_field_errors %}
                     <div class="alert alert-warning">

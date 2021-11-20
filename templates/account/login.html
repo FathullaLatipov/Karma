@@ -30,35 +30,17 @@
 </script>
 {% endblock %} {% block content %}
 <div class="banner-area organic-breadcrumb" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-QkwW3JE8Isn33uxg_1pn-hi4bzWZV7jwQ&usqp=CAU);width:100%;height:100%;background-repeat:no-repeat;background-size:cover">
-    <h3 class="text-center p-3" style="font-weight:600">{% trans 'Login Page' %}</h3>
     <div class="container col-md-6">
-    <ul class="socialaccount_providers" style="background-color:#fff;padding:1px;box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);margin:auto;border-radius:20px 20px 0px 0px">
+    <ul class="socialaccount_providers mt-5" style="background-color:#fff;">
         {% get_providers as socialaccount_providers %}
+ <h3 class="text-center p-3" style="font-weight:600;text-align:center">{% trans 'Login Page' %}</h3>
 
-        {% for provider in socialaccount_providers %}
-
-
-        <li class="social_menu">
-            <a title="{{provider.name}}"
-               class="btn btn-block btn-social btn-md socialaccount_provider btn-{{provider.id}}"
-               href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}"
-               style="color:#000;">
-
-                <img alt="{{provider.name}}" src="{% static 'img/features/' %}{{provider.name}}logo.png" width="40"
-                     height="40"><br>{% trans 'Login with' %} {{provider.name}}
-            </a>
-
-            <!--    <a style="" title="{{provider.name}}" class="socialaccount_provider2 {{provider.id}}"-->
-            <!--     href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name|cut:'Facebook'|cut:'Instagram'}}</a>-->
-            <!--    <img alt="{{provider.name}}" src="{% static 'img/favourites/' }%{{provider.name}}facebook.png" width="40" height="40" >-->
-        </li>
-        {% endfor %}
 
     </ul>
 
     <div class="well login-well pt-4" style="box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);width: 320px;margin:auto;border-radius:0px 0px 30px 30px">
         <div class="socialaccount_ballot" >
-            <ul class="socialaccount_providers" >
+            <ul class="socialaccount_providersa" >
                 <form class="django-login" method="POST" action="{% url 'account_login' %}">
                     {% csrf_token %} {% if form.non_field_errors %}
                     <div class="alert alert-warning">

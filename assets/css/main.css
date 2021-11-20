@@ -1067,6 +1067,14 @@ h1, h2, h3, h4, h5, h6 {
             .card_humans{
                 width:200px
             }
+            .socialaccount_providers{
+                background-color:#fff;
+                padding:1px;
+                box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+                border-radius:20px 20px 0px 0px;
+                width:50%;
+                text-align:center
+            }
              }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
@@ -5511,8 +5519,6 @@ label {
 
 .socialaccount_providers{
     margin: auto;
-    width: fit-content;
-    display: flex;
 }
 
 
@@ -5650,6 +5656,15 @@ label {
     padding-bottom: 0px; }
     .card_humans{
         width:100%
+    }
+    .socialaccount_providers{
+        background-color:#fff;
+        padding:1px;
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+        margin:auto;
+        border-radius:20px 20px 0px 0px;
+        width:100%;
+        text-align:center
     }
      }
 

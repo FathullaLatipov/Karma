@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 23:03+0500\n"
+"POT-Creation-Date: 2021-11-20 14:19+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,11 +164,11 @@ msgstr "изображения продукта"
 msgid "product images"
 msgstr "изображения продуктов"
 
-#: .\sotti\settings.py:122
+#: .\sotti\settings.py:127
 msgid "Russian"
 msgstr ""
 
-#: .\sotti\settings.py:123
+#: .\sotti\settings.py:128
 msgid "English"
 msgstr ""
 
@@ -599,19 +599,19 @@ msgstr "Адрес"
 msgid "Cards are not working yet and will work soon"
 msgstr "Карты пока не работают и скоро будут работать"
 
-#: .\templates\checkout2.html:100
+#: .\templates\checkout2.html:101
 msgid "Purchase"
 msgstr "Купить"
 
-#: .\templates\checkout2.html:106
+#: .\templates\checkout2.html:107
 msgid "Your Order"
 msgstr "Ваша корзина"
 
-#: .\templates\checkout2.html:108 .\templates\history.html:24
+#: .\templates\checkout2.html:109 .\templates\history.html:24
 msgid "Products"
 msgstr "Продукты"
 
-#: .\templates\checkout2.html:116 .\templates\shopping-cart.html:34
+#: .\templates\checkout2.html:117 .\templates\shopping-cart.html:34
 #: .\templates\shopping-cart.html:74
 msgid "Total"
 msgstr "Общий"
@@ -697,55 +697,55 @@ msgstr "Безопасная оплата через PayPal и другие"
 msgid "Category"
 msgstr "Катрегория"
 
-#: .\templates\index.html:115
+#: .\templates\index.html:114
 msgid "Для мальчиков"
 msgstr "Для мальчиков"
 
-#: .\templates\index.html:128
+#: .\templates\index.html:125
 msgid "Для детей"
 msgstr "Для детей"
 
-#: .\templates\index.html:140
+#: .\templates\index.html:136
 msgid "Головоломки"
 msgstr "Головоломки"
 
-#: .\templates\index.html:151
+#: .\templates\index.html:147
 msgid "Лего"
 msgstr "Лего"
 
-#: .\templates\index.html:164
-msgid "Куклы"
-msgstr "Куклы"
+#: .\templates\index.html:160
+msgid "Для девушек"
+msgstr "Для девушек"
 
-#: .\templates\index.html:183
+#: .\templates\index.html:179
 msgid "Latest Products"
 msgstr "Последние продукты"
 
-#: .\templates\index.html:184
+#: .\templates\index.html:180
 msgid "Shown here are our latest products"
 msgstr "Тут показаны последние продукты"
 
-#: .\templates\index.html:230
+#: .\templates\index.html:226
 msgid "Exclusive Hot Deal Ends Soon!"
 msgstr "Эксклюзивная горячая сделка скоро закончится!"
 
-#: .\templates\index.html:238
+#: .\templates\index.html:234
 msgid "Days"
 msgstr "Дней"
 
-#: .\templates\index.html:242
+#: .\templates\index.html:238
 msgid "Hours"
 msgstr "Часов"
 
-#: .\templates\index.html:246
+#: .\templates\index.html:242
 msgid "Mins"
 msgstr "Минут"
 
-#: .\templates\index.html:250
+#: .\templates\index.html:246
 msgid "Secs"
 msgstr "Секунд"
 
-#: .\templates\index.html:255
+#: .\templates\index.html:251
 msgid "Shop Now"
 msgstr "Купить сейчас"
 
@@ -978,6 +978,9 @@ msgstr "Список желаний"
 #: .\templates\wishlist.html:13
 msgid "Wishlist"
 msgstr "Желаний"
+
+#~ msgid "Куклы"
+#~ msgstr "Куклы"
 
 #~ msgid "author"
 #~ msgstr "автор"
