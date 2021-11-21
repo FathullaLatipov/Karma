@@ -692,7 +692,7 @@ msgstr "Puzzle"
 #: .\templates\index.html:147
 msgid "Лего"
 msgstr "Lego"
-$
+
 #: .\templates\index.html:160
 msgid "Для девушек"
 msgstr "For girls"
