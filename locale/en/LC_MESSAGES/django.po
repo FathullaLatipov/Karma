@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-20 14:19+0500\n"
+"POT-Creation-Date: 2021-11-21 15:26+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -297,30 +297,26 @@ msgid ""
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
 
-#: .\templates\account\login.html:9 .\templates\account\login.html:92
-#: .\templates\account\signup.html:104
+#: .\templates\account\login.html:9 .\templates\account\login.html:74
+#: .\templates\account\signup.html:85
 msgid "Sign In"
 msgstr ""
 
-#: .\templates\account\login.html:33
+#: .\templates\account\login.html:36
 msgid "Login Page"
 msgstr ""
 
-#: .\templates\account\login.html:48
-msgid "Login with"
-msgstr ""
-
-#: .\templates\account\login.html:85
+#: .\templates\account\login.html:67
 msgid "Remember me"
 msgstr ""
 
-#: .\templates\account\login.html:95
+#: .\templates\account\login.html:77
 #: .\templates\account\password_change.html:37
-#: .\templates\account\signup.html:103
+#: .\templates\account\signup.html:84
 msgid "Forgot Password?"
 msgstr ""
 
-#: .\templates\account\login.html:96
+#: .\templates\account\login.html:78
 msgid "Sign up"
 msgstr ""
 
@@ -469,7 +465,7 @@ msgid "Signup"
 msgstr ""
 
 #: .\templates\account\signup.html:14 .\templates\account\signup.html:30
-#: .\templates\account\signup.html:100 .\templates\socialaccount\signup.html:8
+#: .\templates\account\signup.html:81 .\templates\socialaccount\signup.html:8
 #: .\templates\socialaccount\signup.html:20
 msgid "Sign Up"
 msgstr ""
@@ -480,12 +476,8 @@ msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 msgstr ""
 
-#: .\templates\account\signup.html:36
+#: .\templates\account\signup.html:40
 msgid "Register Page"
-msgstr ""
-
-#: .\templates\account\signup.html:51
-msgid "Register with"
 msgstr ""
 
 #: .\templates\account\signup_closed.html:5
@@ -700,7 +692,7 @@ msgstr "Puzzle"
 #: .\templates\index.html:147
 msgid "Лего"
 msgstr "Lego"
-
+$
 #: .\templates\index.html:160
 msgid "Для девушек"
 msgstr "For girls"
@@ -754,11 +746,11 @@ msgstr ""
 msgid "Stay update with our latest"
 msgstr ""
 
-#: .\templates\layouts\footer.html:48
+#: .\templates\layouts\footer.html:47
 msgid "Follow Us"
 msgstr ""
 
-#: .\templates\layouts\footer.html:49
+#: .\templates\layouts\footer.html:48
 msgid "Let us be social"
 msgstr ""
 
@@ -781,6 +773,38 @@ msgstr ""
 
 #: .\templates\layouts\header.html:78 .\templates\layouts\header.html:87
 msgid "Search Here"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:71
+#: .\templates\single-product.html:321
+msgid "Added to wishlist"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:74
+msgid "Added"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:79
+#: .\templates\single-product.html:329
+msgid "Removed from wishlist"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:82
+#: .\templates\layouts\product_block.html:116
+msgid "Removed"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:105
+msgid "Adaded to cart"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:108
+msgid "Added to bag +"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:113
+#: .\templates\single-product.html:363
+msgid "Removed from cart"
 msgstr ""
 
 #: .\templates\login.html:9 .\templates\login.html:12
@@ -821,6 +845,10 @@ msgstr ""
 
 #: .\templates\shop.html:46
 msgid "High to low"
+msgstr ""
+
+#: .\templates\shop.html:120
+msgid "$"
 msgstr ""
 
 #: .\templates\shopping-cart.html:11 .\templates\shopping-cart.html:14
@@ -887,12 +915,24 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: .\templates\single-product.html:217
+#: .\templates\single-product.html:217 .\templates\single-product.html:269
 msgid "Submit Now"
 msgstr ""
 
 #: .\templates\single-product.html:287
 msgid "Deals of the Week"
+msgstr ""
+
+#: .\templates\single-product.html:355
+msgid "Added to cart"
+msgstr ""
+
+#: .\templates\single-product.html:358
+msgid "added-cart"
+msgstr ""
+
+#: .\templates\single-product.html:366
+msgid "removed-cart"
 msgstr ""
 
 #: .\templates\socialaccount\authentication_error.html:5

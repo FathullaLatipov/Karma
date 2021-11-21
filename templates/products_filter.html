@@ -50,7 +50,7 @@
                             {% for tag in tags %}
                              <a {% if request.GET.tag == tag.pk|stringformat:'i' %}class="a-active"{% endif %}  onclick="addUrlParameter('tag', '{{ tag.pk }}')" style="cursor:pointer">
                                 <span class="lnr lnr-arrow-right"></span>{{ tag.title }}<span
-                                    class="number">(53)</span></a>
+                                    class="number"></span></a>
                             {% endfor %}
                         </li>
                     </ul>

@@ -102,14 +102,14 @@ class ProductModel(models.Model):
     long_description = RichTextUploadingField(verbose_name=_('long_description'))
     category = models.ForeignKey(CategoryModel, on_delete=models.PROTECT, related_name='products', null=True,
                                  verbose_name=_('category'), )
-    brand = models.ForeignKey(BrandModel, on_delete=models.PROTECT, related_name='products', verbose_name=_('brand'))
+    brand = models.ForeignKey(BrandModel, on_delete=models.PROTECT, related_name='products', null=True,blank=True, verbose_name=_('brand'))
     width = models.ForeignKey(WidthModel, on_delete=models.PROTECT, null=True, related_name='products',
                               verbose_name=_('width'))
     height = models.ForeignKey(HeightModel, on_delete=models.PROTECT, null=True, related_name='products',
                                verbose_name=_('height'))
     weight = models.ForeignKey(WeightModel, on_delete=models.PROTECT, null=True, related_name='products',
                                verbose_name=_('weight'))
-    tags = models.ManyToManyField(ProductTagModel, related_name='products', verbose_name=_('tags'))
+    tags = models.ManyToManyField(ProductTagModel, related_name='products',  verbose_name=_('tags'))
 
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_('created_at'))

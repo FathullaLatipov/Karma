@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-20 14:19+0500\n"
+"POT-Creation-Date: 2021-11-21 15:26+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,30 +301,26 @@ msgid ""
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
 
-#: .\templates\account\login.html:9 .\templates\account\login.html:92
-#: .\templates\account\signup.html:104
+#: .\templates\account\login.html:9 .\templates\account\login.html:74
+#: .\templates\account\signup.html:85
 msgid "Sign In"
 msgstr "Войти"
 
-#: .\templates\account\login.html:33
+#: .\templates\account\login.html:36
 msgid "Login Page"
 msgstr "Логин Страница"
 
-#: .\templates\account\login.html:48
-msgid "Login with"
-msgstr "Логин через"
-
-#: .\templates\account\login.html:85
+#: .\templates\account\login.html:67
 msgid "Remember me"
 msgstr "Запомнить меня"
 
-#: .\templates\account\login.html:95
+#: .\templates\account\login.html:77
 #: .\templates\account\password_change.html:37
-#: .\templates\account\signup.html:103
+#: .\templates\account\signup.html:84
 msgid "Forgot Password?"
 msgstr "Забыли Пароль?"
 
-#: .\templates\account\login.html:96
+#: .\templates\account\login.html:78
 msgid "Sign up"
 msgstr "Зарегистрироваться"
 
@@ -480,7 +476,7 @@ msgid "Signup"
 msgstr "Зарегистрироваться"
 
 #: .\templates\account\signup.html:14 .\templates\account\signup.html:30
-#: .\templates\account\signup.html:100 .\templates\socialaccount\signup.html:8
+#: .\templates\account\signup.html:81 .\templates\socialaccount\signup.html:8
 #: .\templates\socialaccount\signup.html:20
 msgid "Sign Up"
 msgstr "Зарегистрироваться"
@@ -492,13 +488,9 @@ msgid ""
 msgstr ""
 "Уже есть аккаунт? Тогда пожалуйста <a href=\"%(login_url)s\">войдите</a>"
 
-#: .\templates\account\signup.html:36
+#: .\templates\account\signup.html:40
 msgid "Register Page"
 msgstr "Страница Регистрации"
-
-#: .\templates\account\signup.html:51
-msgid "Register with"
-msgstr "Регистрация с"
 
 #: .\templates\account\signup_closed.html:5
 #: .\templates\account\signup_closed.html:8
@@ -766,11 +758,11 @@ msgstr "Новостная рассылка"
 msgid "Stay update with our latest"
 msgstr "Будьте в курсе наших последних новостей"
 
-#: .\templates\layouts\footer.html:48
+#: .\templates\layouts\footer.html:47
 msgid "Follow Us"
 msgstr "Подписывайтесь на нас"
 
-#: .\templates\layouts\footer.html:49
+#: .\templates\layouts\footer.html:48
 msgid "Let us be social"
 msgstr "Давайте будем социальными"
 
@@ -794,6 +786,38 @@ msgstr "История"
 #: .\templates\layouts\header.html:78 .\templates\layouts\header.html:87
 msgid "Search Here"
 msgstr "Искать тут"
+
+#: .\templates\layouts\product_block.html:71
+#: .\templates\single-product.html:321
+msgid "Added to wishlist"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:74
+msgid "Added"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:79
+#: .\templates\single-product.html:329
+msgid "Removed from wishlist"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:82
+#: .\templates\layouts\product_block.html:116
+msgid "Removed"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:105
+msgid "Adaded to cart"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:108
+msgid "Added to bag +"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:113
+#: .\templates\single-product.html:363
+msgid "Removed from cart"
+msgstr ""
 
 #: .\templates\login.html:9 .\templates\login.html:12
 msgid "Login/Register"
@@ -834,6 +858,10 @@ msgstr "снизу вверх"
 #: .\templates\shop.html:46
 msgid "High to low"
 msgstr "вверху снизу"
+
+#: .\templates\shop.html:120
+msgid "$"
+msgstr ""
 
 #: .\templates\shopping-cart.html:11 .\templates\shopping-cart.html:14
 msgid "Shopping-cart"
@@ -901,13 +929,25 @@ msgstr "Ваш номер"
 msgid "Message"
 msgstr "Ваш сообщение"
 
-#: .\templates\single-product.html:217
+#: .\templates\single-product.html:217 .\templates\single-product.html:269
 msgid "Submit Now"
 msgstr "Отправить"
 
 #: .\templates\single-product.html:287
 msgid "Deals of the Week"
 msgstr "Рекомендованные товары"
+
+#: .\templates\single-product.html:355
+msgid "Added to cart"
+msgstr ""
+
+#: .\templates\single-product.html:358
+msgid "added-cart"
+msgstr ""
+
+#: .\templates\single-product.html:366
+msgid "removed-cart"
+msgstr ""
 
 #: .\templates\socialaccount\authentication_error.html:5
 #: .\templates\socialaccount\authentication_error.html:8
@@ -978,6 +1018,12 @@ msgstr "Список желаний"
 #: .\templates\wishlist.html:13
 msgid "Wishlist"
 msgstr "Желаний"
+
+#~ msgid "Login with"
+#~ msgstr "Логин через"
+
+#~ msgid "Register with"
+#~ msgstr "Регистрация с"
 
 #~ msgid "Куклы"
 #~ msgstr "Куклы"

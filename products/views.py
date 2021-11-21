@@ -16,7 +16,7 @@ from products.utils import get_cart_data, get_wishlist_data
 
 class ProductsListView(ListView):
     template_name = 'shop.html'
-    paginate_by = 9
+    paginate_by = 6
     extra_context = {'title': 'Shop'}
 
     # search in q

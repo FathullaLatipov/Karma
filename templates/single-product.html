@@ -42,7 +42,7 @@
 						<h2>{{ object.real_price }}som</h2>{% if object.is_discount %}<strike>{{ object.price }}som</strike>{% endif %}
 						<ul class="list">
 							<li><a class="active" href="#"><span>{% trans 'Category' %}:</span>{{ object.category }}</a></li>
-							<li><a class="active" href="#"><span>{% trans 'Brand' %}:</span>{{ object.brand }}</a></li>
+							<li><a class="active" href="#"><span>{% trans 'Brand' %}:</span>{{ object.brand|default:'----' }}</a></li>
 <!--							<li><a class="active" href="#"><span>Tag:</span>{% for tag in object.tags.all %}{{ tag.title }}{% if not forloop.last %}, {% endif %}{% endfor %}</a></li>-->
 							<li><a class="active" href="#"><span>{% trans 'Sku' %}:</span>{{ object.sku }}</a></li>
 						</ul>
@@ -266,7 +266,7 @@
 										</div>
 									</div>
 									<div class="col-md-12 text-right">
-										<button type="submit" value="submit" class="primary-btn">Submit Now</button>
+										<button type="submit" value="submit" class="primary-btn">{% trans 'Submit Now' %}</button>
 									</div>
 								</form>
 							</div>
@@ -302,6 +302,7 @@
 	</section>
 	<!-- End related-product Area -->
 
+
 <script>
     function add_to_wishlist(element, pk) {
         $.getJSON('/products/' + "wishlist/" + pk, function (data) {
@@ -317,7 +318,7 @@
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Added to wishlist
+                            {% trans 'Added to wishlist' %}
                         </div>
                     </div>`);
                     element.innerHTML = '<span class="lnr" style="background-color:#828bb2;border-radius:50%"><i class="fa fa-heart" style="color:red;font-size:20px;margin-top:10px"></i></span>'
@@ -325,40 +326,7 @@
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
                             <button type="button" onclick="MyFunction()" class="close" data-dismiss="alert">&times;</button>
-                            Removed from wishlist
-                        </div>
-                    </div>`);
-                    element.innerHTML = '<span class="lnr" style="background-color:#828bb2;border-radius:50%"><i class="fa fa-heart" style="font-size:20px;margin-top:10px"></i></span>'
-                }
-                  $('#wishlist_length').html(data.wishlist_len);
-            }
-        });
-    }
-</script>
-<script>
-    function add_to_wishlist(element, pk) {
-        $.getJSON('/products/' + "wishlist/" + pk, function (data) {
-            if (!data.status) {
-               $('#message').append(`<div style="padding:5px">
-                        <div id="inner-message" class="alert alert-error">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Error
-                        </div>
-                    </div>`);
-            } else {
-                if (data.added) {
-                    $('#message').append(`<div style="padding:5px">
-                        <div id="inner-message" class="alert alert-success">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Added to wishlist
-                        </div>
-                    </div>`);
-                    element.innerHTML = '<span class="lnr" style="background-color:#828bb2;border-radius:50%"><i class="fa fa-heart" style="color:red;font-size:20px;margin-top:10px"></i></span>'
-                } else {
-                    $('#message').append(`<div style="padding:5px">
-                        <div id="inner-message" class="alert alert-success">
-                            <button type="button" onclick="MyFunction()" class="close" data-dismiss="alert">&times;</button>
-                            Removed from wishlist
+                            {% trans 'Removed from wishlist' %}
                         </div>
                     </div>`);
                     element.innerHTML = '<span class="lnr" style="background-color:#828bb2;border-radius:50%"><i class="fa fa-heart" style="font-size:20px;margin-top:10px"></i></span>'
@@ -368,6 +336,7 @@
         });
     }
 </script>
+
 <script>
     function add_to_cart(element, pk) {
         $.getJSON('/products/' + "cart/" + pk, function (data) {
@@ -383,51 +352,18 @@
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Added to wishlist
+                            {% trans 'Added to cart' %}
                         </div>
                     </div>`);
-                    element.innerHTML = ' <span class="ti-bag"></span><p class="hover-text">added to bag +</p>'
+                    element.innerHTML = '<span>{% trans 'added-cart' %}</span>'
                 } else {
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
                             <button type="button" onclick="MyFunction()" class="close" data-dismiss="alert">&times;</button>
-                            Removed from wishlist
+                            {% trans 'Removed from cart' %}
                         </div>
                     </div>`);
-                    element.innerHTML = '<span class="ti-bag"></span><p class="hover-text">Removed to bag- </p>'
-                }
-                  $('#cart_length').html(data.cart_len);
-            }
-        });
-    }
-</script>
-<script>
-    function add_to_cart(element, pk) {
-        $.getJSON('/products/' + "cart/" + pk, function (data) {
-            if (!data.status) {
-               $('#message').append(`<div style="padding:5px">
-                        <div id="inner-message" class="alert alert-error">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Error
-                        </div>
-                    </div>`);
-            } else {
-                if (data.added) {
-                    $('#message').append(`<div style="padding:5px">
-                        <div id="inner-message" class="alert alert-success">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Added to cart
-                        </div>
-                    </div>`);
-                    element.innerHTML = '<span>added-cart</span>'
-                } else {
-                    $('#message').append(`<div style="padding:5px">
-                        <div id="inner-message" class="alert alert-success">
-                            <button type="button" onclick="MyFunction()" class="close" data-dismiss="alert">&times;</button>
-                            Removed from cart
-                        </div>
-                    </div>`);
-                    element.innerHTML = '<span>removed-cart</span>'
+                    element.innerHTML = '<span>{% trans 'removed-cart' %}</span>'
                 }
                   $('#cart_length2').html(data.cart_len);
             }

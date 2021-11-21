@@ -41,7 +41,7 @@
     </ul>
 
     <div class="well login-well" style="box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);width: 320px;margin:auto;border-radius:0px 0px 30px 30px">
-        <div class="socialaccount_ballot" >
+        <div class="socialaccount_ballot">
             <ul class="socialaccount_providers1" >
                 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                     {% csrf_token %} {% if form.non_field_errors %}
