@@ -1,1 +1,0 @@
-web: gunicorn sotti.wsgi --log-file -

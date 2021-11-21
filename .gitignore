@@ -100,9 +100,6 @@ ENV/
 .mypy_cache/
 
 /test/staticfiles/
-.idea/.gitignore
-.idea/dictionaries/
-.idea/inspectionProfiles/
-.idea/karma.iml
-.idea/misc.xml
-.idea/modules.xml
+.idea
+static
+media
