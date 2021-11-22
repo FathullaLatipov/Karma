@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-21 15:26+0500\n"
+"POT-Creation-Date: 2021-11-22 17:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,11 +160,11 @@ msgstr ""
 msgid "product images"
 msgstr ""
 
-#: .\sotti\settings.py:127
+#: .\sotti\settings.py:125
 msgid "Russian"
 msgstr ""
 
-#: .\sotti\settings.py:128
+#: .\sotti\settings.py:126
 msgid "English"
 msgstr ""
 
@@ -795,7 +795,8 @@ msgid "Removed"
 msgstr ""
 
 #: .\templates\layouts\product_block.html:105
-msgid "Adaded to cart"
+#: .\templates\single-product.html:355
+msgid "Added to cart"
 msgstr ""
 
 #: .\templates\layouts\product_block.html:108
@@ -845,10 +846,6 @@ msgstr ""
 
 #: .\templates\shop.html:46
 msgid "High to low"
-msgstr ""
-
-#: .\templates\shop.html:120
-msgid "$"
 msgstr ""
 
 #: .\templates\shopping-cart.html:11 .\templates\shopping-cart.html:14
@@ -921,10 +918,6 @@ msgstr ""
 
 #: .\templates\single-product.html:287
 msgid "Deals of the Week"
-msgstr ""
-
-#: .\templates\single-product.html:355
-msgid "Added to cart"
 msgstr ""
 
 #: .\templates\single-product.html:358

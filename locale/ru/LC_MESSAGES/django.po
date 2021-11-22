@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-21 15:26+0500\n"
+"POT-Creation-Date: 2021-11-22 17:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,11 +164,11 @@ msgstr "изображения продукта"
 msgid "product images"
 msgstr "изображения продуктов"
 
-#: .\sotti\settings.py:127
+#: .\sotti\settings.py:125
 msgid "Russian"
 msgstr ""
 
-#: .\sotti\settings.py:128
+#: .\sotti\settings.py:126
 msgid "English"
 msgstr ""
 
@@ -790,34 +790,35 @@ msgstr "Искать тут"
 #: .\templates\layouts\product_block.html:71
 #: .\templates\single-product.html:321
 msgid "Added to wishlist"
-msgstr ""
+msgstr "Добавлено в избранные"
 
 #: .\templates\layouts\product_block.html:74
 msgid "Added"
-msgstr ""
+msgstr "Добавлено"
 
 #: .\templates\layouts\product_block.html:79
 #: .\templates\single-product.html:329
 msgid "Removed from wishlist"
-msgstr ""
+msgstr "Удалено из избранных"
 
 #: .\templates\layouts\product_block.html:82
 #: .\templates\layouts\product_block.html:116
 msgid "Removed"
-msgstr ""
+msgstr "Удалено"
 
 #: .\templates\layouts\product_block.html:105
-msgid "Adaded to cart"
-msgstr ""
+#: .\templates\single-product.html:355
+msgid "Added to cart"
+msgstr "Добавлено в корзину"
 
 #: .\templates\layouts\product_block.html:108
 msgid "Added to bag +"
-msgstr ""
+msgstr "Добавить в корзину +"
 
 #: .\templates\layouts\product_block.html:113
 #: .\templates\single-product.html:363
 msgid "Removed from cart"
-msgstr ""
+msgstr "Удалить из корзины"
 
 #: .\templates\login.html:9 .\templates\login.html:12
 msgid "Login/Register"
@@ -858,10 +859,6 @@ msgstr "снизу вверх"
 #: .\templates\shop.html:46
 msgid "High to low"
 msgstr "вверху снизу"
-
-#: .\templates\shop.html:120
-msgid "$"
-msgstr ""
 
 #: .\templates\shopping-cart.html:11 .\templates\shopping-cart.html:14
 msgid "Shopping-cart"
@@ -936,10 +933,6 @@ msgstr "Отправить"
 #: .\templates\single-product.html:287
 msgid "Deals of the Week"
 msgstr "Рекомендованные товары"
-
-#: .\templates\single-product.html:355
-msgid "Added to cart"
-msgstr ""
 
 #: .\templates\single-product.html:358
 msgid "added-cart"
@@ -1018,6 +1011,9 @@ msgstr "Список желаний"
 #: .\templates\wishlist.html:13
 msgid "Wishlist"
 msgstr "Желаний"
+
+#~ msgid "Adaded to cart"
+#~ msgstr "Добавлено в корзину"
 
 #~ msgid "Login with"
 #~ msgstr "Логин через"
