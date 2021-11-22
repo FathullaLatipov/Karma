@@ -255,7 +255,10 @@
                     <!-- single exclusive carousel -->
                     {% for product in products %}
                     <div class="single-exclusive-slider">
-                        <img class="img-fluid" src="{{ product.image.url }} " alt="">
+                        <a href="{% url 'products:detail' pk=product.pk %}">
+                            <img class="img-fluid" src="{{ product.image.url }} " alt="">
+                        </a>
+
                         <div class="product-details">
 <!--                             <a href="{% url 'products:add-cart' pk=product.pk %}?next={{request.path}}{{request.GET.urlendcode}}" class="social-info">
                                       {% if product|in_cart:request %}
@@ -272,7 +275,7 @@
                             </div>
                             <h4>{{ product.title }}</h4>
                             <div class="add-bag d-flex align-items-center justify-content-center">
-                                <a class="add-btn" href="{% url 'products:add-cart' pk=product.pk %}?next={{request.path}}{{request.GET.urlendcode}}" class="social-info">
+                                <a class="add-btn" onclick="add_to_cart(this, {{ product.pk }})" class="social-info">
                                     {% if product|in_cart:request %}
                                             <span class="ti-bag"></span>
                                         {% else %}
@@ -471,4 +474,37 @@
         }
     </script>
 
+<script>
+    function add_to_cart(element, pk) {
+        $.getJSON('/products/' + "cart/" + pk, function (data) {
+            if (!data.status) {
+               $('#message').append(`<div style="padding:5px">
+                        <div id="inner-message" class="alert alert-error">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            Error
+                        </div>
+                    </div>`);
+            } else {
+                if (data.added) {
+                    $('#message').append(`<div style="padding:5px">
+                        <div id="inner-message" class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            {% trans 'Added to cart' %}
+                        </div>
+                    </div>`);
+                    element.innerHTML = ' <span class="ti-bag"></span><p class="hover-text">{% trans 'Added to bag +' %}</p>'
+                } else {
+                    $('#message').append(`<div style="padding:5px">
+                        <div id="inner-message" class="alert alert-success">
+                            <button type="button" onclick="MyFunction()" class="close" data-dismiss="alert">&times;</button>
+                            {% trans 'Removed from cart' %}
+                        </div>
+                    </div>`);
+                    element.innerHTML = '<span class="ti-bag"></span><p class="hover-text">{% trans 'Removed' %} </p>'
+                }
+                  $('#cart_length2').html(data.cart_len);
+            }
+        });
+    }
+</script>
 {% endblock %}
