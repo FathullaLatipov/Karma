@@ -492,7 +492,7 @@
                             {% trans 'Added to cart' %}
                         </div>
                     </div>`);
-                    element.innerHTML = ' <span class="ti-bag"></span><p class="hover-text">{% trans 'Added to bag +' %}</p>'
+                    element.innerHTML = ' <span class="ti-bag"></span><p class="hover-text"></p>'
                 } else {
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
@@ -500,7 +500,7 @@
                             {% trans 'Removed from cart' %}
                         </div>
                     </div>`);
-                    element.innerHTML = '<span class="ti-bag"></span><p class="hover-text">{% trans 'Removed' %} </p>'
+                    element.innerHTML = '<span class="ti-bag"></span><p class="hover-text"> </p>'
                 }
                   $('#cart_length2').html(data.cart_len);
             }
