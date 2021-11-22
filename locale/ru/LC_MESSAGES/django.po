@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-22 17:59+0500\n"
+"POT-Creation-Date: 2021-11-22 18:02+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -818,7 +818,7 @@ msgstr "Добавить в корзину +"
 #: .\templates\layouts\product_block.html:113
 #: .\templates\single-product.html:363
 msgid "Removed from cart"
-msgstr "Удалить из корзины"
+msgstr "Удалено из корзины"
 
 #: .\templates\login.html:9 .\templates\login.html:12
 msgid "Login/Register"
