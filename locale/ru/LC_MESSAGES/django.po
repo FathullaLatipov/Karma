@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-22 18:02+0500\n"
+"POT-Creation-Date: 2021-11-22 19:40+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -936,11 +936,11 @@ msgstr "Рекомендованные товары"
 
 #: .\templates\single-product.html:358
 msgid "added-cart"
-msgstr ""
+msgstr "Добавлено в корзину"
 
 #: .\templates\single-product.html:366
 msgid "removed-cart"
-msgstr ""
+msgstr "Удалено из корзины"
 
 #: .\templates\socialaccount\authentication_error.html:5
 #: .\templates\socialaccount\authentication_error.html:8
