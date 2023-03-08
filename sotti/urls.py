@@ -20,6 +20,11 @@ urlpatterns += i18n_patterns(
     path('products/', include('products.urls', namespace='products')),
     path('', include('pages.urls', namespace='contact')),
 )
+
+if 'rosetta' in settings.INSTALLED_APPS:
+    urlpatterns += [
+        path('rosetta/', include('rosetta.urls'))
+    ]
 # hny$pz4Ve263K-T
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
