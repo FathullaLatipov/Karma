@@ -77,6 +77,8 @@ class ProductModelAdmin(MyTranslationAdmin):
     list_filter = ['title', 'created_at']
     autocomplete_fields = ['category', 'brand', 'tags', 'width', 'height', 'weight']
     readonly_fields = ['real_price']
+    save_as = True
+    save_on_top = True
 
     inlines = [ProductImageModelAdmin]
 
