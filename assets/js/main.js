@@ -63,7 +63,7 @@ $(document).ready(function(){
         autoplayTimeout: 5000,
         loop:true,
         nav:true,
-        navText:["<img src='/static/img/product/prev.png'>","<img src='/static/img/product/next.png'>"],
+        navText:["<img style='width: 30px' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBElEQVR4nO3YzSpEcRjA4afJLLCwcwFzAXMBroDIQlwHF8CKS5AboOxHXACxZG2D8rUgOxslmjo0Tf/JR8q8p/epd39+na/3HFJKKaWUUvpj87jFIxYFNYMXvFXzIKApPPdEdOdeMG089UW8YkkgLdz1RXRnWSCTOC9ErApkAmeFiE2BjOGoELGNhiCaOChEdDAiiAZ2CxHH1VkKY6sQMexzWb2oP20MwUH9dm56Q9brEhL10rrAtG/e7CcYF0wT+4WYvUiP3w+jOCzE7ER6IfauKKfRV5SvlsY1AbUGrPErAmoP+LBaUJNP3Ss1+flwLbC5alHrRsz+98GklFJKKaXkJ94B/FYc410EtlgAAAAASUVORK5CYII='>","<img src='/static/img/product/next.png'>"],
         dots:false
     });
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
         autoplayTimeout: 5000,
         loop:true,
         nav:true,
-        navText:["<img src='/static/img/product/prev.png'>","<img src='/static/img/product/next.png'>"],
+        navText:["<img style='width: 30px' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBElEQVR4nO3YzSpEcRjA4afJLLCwcwFzAXMBroDIQlwHF8CKS5AboOxHXACxZG2D8rUgOxslmjo0Tf/JR8q8p/epd39+na/3HFJKKaWUUvpj87jFIxYFNYMXvFXzIKApPPdEdOdeMG089UW8YkkgLdz1RXRnWSCTOC9ErApkAmeFiE2BjOGoELGNhiCaOChEdDAiiAZ2CxHH1VkKY6sQMexzWb2oP20MwUH9dm56Q9brEhL10rrAtG/e7CcYF0wT+4WYvUiP3w+jOCzE7ER6IfauKKfRV5SvlsY1AbUGrPErAmoP+LBaUJNP3Ss1+flwLbC5alHrRsz+98GklFJKKaXkJ94B/FYc410EtlgAAAAASUVORK5CYII='>",,"<img src='/static/img/product/next.png'>"],
         dots:false
     });
 
@@ -101,7 +101,7 @@ $(document).ready(function(){
         autoplayTimeout: 5000,
         loop:true,
         nav:true,
-        navText:["<img src='/static/img/product/prev.png'>","<img src='/static/img/product/next.png'>"],
+        navText:["<img style='width: 30px' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBElEQVR4nO3YzSpEcRjA4afJLLCwcwFzAXMBroDIQlwHF8CKS5AboOxHXACxZG2D8rUgOxslmjo0Tf/JR8q8p/epd39+na/3HFJKKaWUUvpj87jFIxYFNYMXvFXzIKApPPdEdOdeMG089UW8YkkgLdz1RXRnWSCTOC9ErApkAmeFiE2BjOGoELGNhiCaOChEdDAiiAZ2CxHH1VkKY6sQMexzWb2oP20MwUH9dm56Q9brEhL10rrAtG/e7CcYF0wT+4WYvUiP3w+jOCzE7ER6IfauKKfRV5SvlsY1AbUGrPErAmoP+LBaUJNP3Ss1+flwLbC5alHrRsz+98GklFJKKaXkJ94B/FYc410EtlgAAAAASUVORK5CYII='>",,"<img src='/static/img/product/next.png'>"],
         dots:false
     });
 

@@ -3,6 +3,11 @@
 {% load i18n %}
 {% load mytags %}
 {% block content %}
+<style>
+.owl-controls {
+    display: none;
+}
+</style>
 <!-- start banner Area -->
 <section class="banner-area">
     <div class="container">
@@ -14,9 +19,7 @@
                         <div class="col-lg-5 col-md-6">
                             <div class="banner-content">
                                 <h1 style="color:#fff">{% trans 'Nike New Collection!' %}</h1>
-                                <p style="color:#fff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                <p style="color:#fff">{% trans 'Приветствуем вас в нашем магазине игрушек! Мы предлагаем широкий ассортимент различных игрушек для детей всех возрастов и интересов. У нас вы можете найти игрушки для самых маленьких, конструкторы, настольные игры, научно-познавательные игры и многое другое.' %}</p>
 
                             </div>
                         </div>
@@ -27,20 +30,8 @@
                         </div>
                     </div>
                     <!-- single-slide -->
-                    <div class="row single-slide">
-                        <div class="col-lg-5">
-                            <div class="banner-content">
-                                <h1 style="color:#fff">{% trans 'Nike New Collection!' %}</h1>
-                                <p style="color:#fff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="banner-img">
-                                <img class="img-fluid" src="{% static 'img/banner/banner-img.png' %} " alt="">
-                            </div>
-                        </div>
+                    <div class="row">
+
                     </div>
                 </div>
             </div>
@@ -106,7 +97,7 @@
             <div class="col-lg-8 col-md-12">
                 <div class="row">
                     <div class="col-lg-8 col-md-8">
-                        <a href="/products/?category=7">
+                        <a href="/products/?category=1">
                          <div class="single-deal">
                             <div class="overlay"></div>
                               <img class="img-fluid w-100" src="{% static 'img/category/1.png' %}" alt="">
@@ -118,7 +109,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="single-deal">
-                             <a href="/products/?category=8">
+                             <a href="/products/?category=2">
                             <div class="overlay"></div>
                             <img class="img-fluid w-100" src="{% static 'img/category/4.png' %} " alt="">
                                 <div class="deal-details">
@@ -129,7 +120,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="single-deal">
-                            <a href="/products/?category=9">
+                            <a href="/products/?category=3">
                                 <div class="overlay"></div>
                               <img class="img-fluid w-100" src="{% static 'img/category/5.2.jpg' %} " alt="">
                                 <div class="deal-details">
@@ -140,7 +131,7 @@
                     </div>
                     <div class="col-lg-8 col-md-8">
                         <div class="single-deal">
-                            <a href="/products/?category=10">
+                            <a href="/products/?category=4">
                                 <div class="overlay"></div>
                             <img class="img-fluid w-100" src="{% static 'img/category/c4.jpg.png' %} " alt="">
                                 <div class="deal-details">
@@ -153,7 +144,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="single-deal">
-                    <a href="/products/?category=11">
+                    <a href="/products/?category=5">
                     <div class="overlay"></div>
                       <img class="img-fluid w-100" src="{% static 'img/category/2.png' %} " alt="">
                                 <div class="deal-details">

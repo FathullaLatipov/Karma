@@ -30,7 +30,7 @@
                                                     <span class="ti-bag" style="margin-right:1px"></span>
                                              {% endif %}
                                             </span>
-                                            <p class="hover-text">Cart</p>
+                                            <p class="hover-text">{% trans 'Cart' %}</p>
                                         </a>
                                         <a onclick="add_to_wishlist(this, {{ product.pk }})" class="social-info2">
                                             <span class="lnr">
@@ -40,11 +40,11 @@
                                                     <i class="fa fa-heart" style="font-size:17px;margin-right:1px;"></i>
                                                 {% endif %}
                                             </span>
-                                            <p class="hover-text">Wishlist</p>
+                                            <p class="hover-text">{% trans 'Wishlist' %}</p>
                                         </a>
                                         <a href="{% url 'products:detail' pk=product.pk %}" class="social-info">
                                             <span class="lnr lnr-move"></span>
-                                            <p class="hover-text">view more</p>
+                                            <p class="hover-text">{% trans 'View more' %}</p>
                                         </a>
                                     </div>
                                 </div>

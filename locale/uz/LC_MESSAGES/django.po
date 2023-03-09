@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 00:31+0500\n"
+"POT-Creation-Date: 2023-03-09 13:54+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -543,6 +543,31 @@ msgstr "Biz haqimizda"
 msgid "Home"
 msgstr "Uy"
 
+#: templates/blog.html:23
+#, fuzzy
+#| msgid "About Us"
+msgid "About us"
+msgstr "Biz haqimizda"
+
+#: templates/blog.html:25
+msgid ""
+"\n"
+"            Мы заботимся о качестве нашего товара и работаем только с "
+"проверенными поставщиками. Все наши игрушки проходят строгий контроль "
+"качества, чтобы быть уверенными в их безопасности и долговечности.\n"
+"            Мы предоставляем удобные способы оплаты и доставки, чтобы "
+"сделать ваше покупательский опыт максимально приятным.\n"
+"                Если у вас возникнут какие-либо вопросы или проблемы, наши "
+"опытные консультанты по продажам всегда готовы помочь вам сделать правильный "
+"выбор.\n"
+"\n"
+"Мы верим, что игрушки - это не просто развлечение, но и важная часть "
+"развития ребенка. Поэтому мы стремимся предложить нашим клиентам только "
+"лучшие игрушки, которые помогут развивать творческие и когнитивные "
+"способности детей.\n"
+"            "
+msgstr ""
+
 #: templates/checkout2.html:11 templates/checkout2.html:14
 #: templates/checkout2.html:60
 msgid "Checkout"
@@ -599,22 +624,22 @@ msgid "Contact"
 msgstr "Aloqa"
 
 #: templates/contact.html:32
-msgid "Mirzo Ulugbek Tumani 16-28"
+msgid "Mirzo Ulugbek Tumani"
 msgstr ""
 
-#: templates/contact.html:54
+#: templates/contact.html:48
 msgid "Enter your name"
 msgstr ""
 
-#: templates/contact.html:57
+#: templates/contact.html:51
 msgid "Enter email address"
 msgstr ""
 
-#: templates/contact.html:60
+#: templates/contact.html:54
 msgid "Enter Message"
 msgstr ""
 
-#: templates/contact.html:62
+#: templates/contact.html:56
 msgid "Send Message"
 msgstr ""
 
@@ -638,104 +663,112 @@ msgstr ""
 msgid "Created_at"
 msgstr ""
 
-#: templates/index.html:16 templates/index.html:33
+#: templates/index.html:21
 msgid "Nike New Collection!"
 msgstr "Yengi modellar"
 
-#: templates/index.html:62
+#: templates/index.html:22
+msgid ""
+"Приветствуем вас в нашем магазине игрушек! Мы предлагаем широкий ассортимент "
+"различных игрушек для детей всех возрастов и интересов. У нас вы можете "
+"найти игрушки для самых маленьких, конструкторы, настольные игры, научно-"
+"познавательные игры и многое другое."
+msgstr ""
+
+#: templates/index.html:53
 msgid "Free Delivery"
 msgstr ""
 
-#: templates/index.html:63
+#: templates/index.html:54
 msgid "Free Shipping on all order"
 msgstr ""
 
-#: templates/index.html:72 templates/index.html:73
+#: templates/index.html:63 templates/index.html:64
 msgid "Return Policy"
 msgstr ""
 
-#: templates/index.html:82
+#: templates/index.html:73
 msgid "24/7 Support"
 msgstr ""
 
-#: templates/index.html:83
+#: templates/index.html:74
 msgid "24/7 Support operators"
 msgstr ""
 
-#: templates/index.html:92
+#: templates/index.html:83
 msgid "Secure Payment"
 msgstr ""
 
-#: templates/index.html:93
+#: templates/index.html:84
 msgid "Secure Payment PayPal and more"
 msgstr ""
 
-#: templates/index.html:104 templates/single-product.html:44
+#: templates/index.html:95 templates/single-product.html:44
 #, fuzzy
 #| msgid "Categories"
 msgid "Category"
 msgstr "Bolimlar"
 
-#: templates/index.html:114
+#: templates/index.html:105
 msgid "Для мальчиков"
 msgstr ""
 
-#: templates/index.html:125
+#: templates/index.html:116
 msgid "Для детей"
 msgstr ""
 
-#: templates/index.html:136
+#: templates/index.html:127
 msgid "Головоломки"
 msgstr ""
 
-#: templates/index.html:147
+#: templates/index.html:138
 msgid "Лего"
 msgstr ""
 
-#: templates/index.html:160
+#: templates/index.html:151
 msgid "Для девушек"
 msgstr ""
 
-#: templates/index.html:179
+#: templates/index.html:170
 msgid "Latest Products"
 msgstr ""
 
-#: templates/index.html:180
+#: templates/index.html:171
 msgid "Shown here are our latest products"
 msgstr ""
 
-#: templates/index.html:226
+#: templates/index.html:217
 msgid "Exclusive Hot Deal Ends Soon!"
 msgstr ""
 
-#: templates/index.html:234
+#: templates/index.html:225
 msgid "Days"
 msgstr ""
 
-#: templates/index.html:238
+#: templates/index.html:229
 msgid "Hours"
 msgstr ""
 
-#: templates/index.html:242
+#: templates/index.html:233
 msgid "Mins"
 msgstr ""
 
-#: templates/index.html:246
+#: templates/index.html:237
 msgid "Secs"
 msgstr ""
 
-#: templates/index.html:251
+#: templates/index.html:242
 #, fuzzy
 #| msgid "Shop"
 msgid "Shop Now"
 msgstr "Maxsulotlar"
 
-#: templates/index.html:492 templates/layouts/product_block.html:105
+#: templates/index.html:483 templates/layouts/product_block.html:105
 #: templates/single-product.html:355
 msgid "Added to cart"
 msgstr ""
 
-#: templates/index.html:500 templates/layouts/product_block.html:113
+#: templates/index.html:491 templates/layouts/product_block.html:113
 #: templates/single-product.html:363
 msgid "Removed from cart"
 msgstr ""
@@ -743,25 +776,24 @@ msgstr ""
 #: templates/layouts/footer.html:10
 msgid ""
 "\n"
-"\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed "
-"do eiusmod tempor incididunt ut labore dolore\n"
-"\t\t\t\t\t\t\tmagna aliqua\n"
+"\t\t\t\t\t\t\tМы благодарим вас за выбор нашего магазина и надеемся, что "
+"наши игрушки принесут радость и позитивные эмоции вашим детям!\n"
 "\t\t\t\t\t\t\t"
 msgstr ""
 
-#: templates/layouts/footer.html:19
+#: templates/layouts/footer.html:18
 msgid "Newsletter"
 msgstr ""
 
-#: templates/layouts/footer.html:20
+#: templates/layouts/footer.html:19
 msgid "Stay update with our latest"
 msgstr ""
 
-#: templates/layouts/footer.html:47
+#: templates/layouts/footer.html:46
 msgid "Follow Us"
 msgstr ""
 
-#: templates/layouts/footer.html:48
+#: templates/layouts/footer.html:47
 msgid "Let us be social"
 msgstr ""
 
@@ -784,6 +816,19 @@ msgstr ""
 
 #: templates/layouts/header.html:78 templates/layouts/header.html:87
 msgid "Search Here"
+msgstr ""
+
+#: templates/layouts/product_block.html:33 templates/single-product.html:62
+#: templates/single-product.html:64
+msgid "Cart"
+msgstr ""
+
+#: templates/layouts/product_block.html:43 templates/wishlist.html:13
+msgid "Wishlist"
+msgstr ""
+
+#: templates/layouts/product_block.html:47
+msgid "View more"
 msgstr ""
 
 #: templates/layouts/product_block.html:71 templates/single-product.html:321
@@ -875,10 +920,6 @@ msgstr "Brandlar"
 
 #: templates/single-product.html:47
 msgid "Sku"
-msgstr ""
-
-#: templates/single-product.html:62 templates/single-product.html:64
-msgid "Cart"
 msgstr ""
 
 #: templates/single-product.html:87
@@ -993,8 +1034,4 @@ msgstr ""
 
 #: templates/wishlist.html:10
 msgid "Wishlist Page"
-msgstr ""
-
-#: templates/wishlist.html:13
-msgid "Wishlist"
 msgstr ""
