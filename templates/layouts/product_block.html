@@ -7,11 +7,11 @@
                                 <img class="img-fluid" src="{{ product.image.url }}" alt="">
                                 {% if product.is_discount %}
                                 <span class="sale"
-                                      style="position: absolute;margin-top: 21%;margin-left: -20%;padding: 7px;width: 50px;height: 35px;background-color: #888;color:#fff">sale</span>
+                                      style="position: absolute;margin-top: 21%;margin-left: -20%;padding: 7px;width: 50px;height: 35px;background-color: #888;color:#fff">{% trans 'sale' %}</span>
                                 {% endif %}
                                 {% if product.is_new %}
-                                <span class="sale {% if product.is_discount %}mt-3{% endif %}"
-                                      style="position: absolute;margin-top: 21%;margin-left: -20%;padding: 7px;width: 50px;height: 35px;background-color: #888;color:#fff">new</span>
+                                <span class="sale {% if product.is_new %}mt-3{% endif %}"
+                                      style="position: absolute;margin-top: 21%;margin-left: -20%;padding: 7px;width: 50px;height: 35px;background-color: #888;color:#fff">{% trans 'new' %}</span>
                                 {% endif %}
                                 <div class="product-details">
                                     <h6>{{ product.title }}</h6>

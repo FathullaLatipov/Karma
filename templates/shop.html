@@ -117,7 +117,7 @@
         max: {{ max_price|cut:',' }},
         from: {% get_price request 0 %},
         to: {% get_price request 1 %},
-        prefix: "$",
+        prefix: "Som",
         onFinish(data) {
             let result = data.from.toString() + ';' + data.to.toString()
             addUrlParameter('price', result);
